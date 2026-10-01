@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversa com o robô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dialogo">
+    <section id="painel-dialogo" aria-label="Conversa com o robô">
+        <div id="linha-dialogo">
+            <button id="botao-auto-dialogo" type="button" title="Ativar envio automático após 5 segundos sem texto" aria-pressed="false">Auto</button>
+            <input id="mensagem-dialogo" type="text" maxlength="2000" placeholder="Digite uma mensagem..." aria-label="Mensagem">
+            <button id="botao-enviar-dialogo" type="button">Enviar</button>
+        </div>
+        <span id="estado-dialogo" role="status" aria-live="polite" hidden></span>
+    </section>
+    <script src="dialog.js"></script>
+</body>
+</html>

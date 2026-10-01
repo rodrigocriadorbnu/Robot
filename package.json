@@ -1,0 +1,37 @@
+{
+  "name": "robo-virtual",
+  "version": "1.0.0",
+  "description": "Robô virtual para a área de trabalho do Windows",
+  "main": "main.js",
+  "scripts": {
+    "start": "set ELECTRON_RUN_AS_NODE=&& electron .",
+    "dist": "electron-builder --win nsis",
+    "test:piper": "tts\\piper\\.venv\\Scripts\\python.exe -m piper --model pt_BR-faber-medium --data-dir tts/piper --output-file tts/piper/teste.wav -- \"Olá Rodrigo! Eu sou o seu robô virtual.\""
+  },
+  "keywords": [
+    "robo",
+    "desktop",
+    "electron",
+    "ia"
+  ],
+  "author": "Rodrigo",
+  "license": "MIT",
+  "build": {
+    "appId": "br.com.rodrigo.robovirtual",
+    "productName": "Robo Virtual",
+    "directories": { "output": "dist" },
+    "files": ["*.js", "*.html", "*.css", "respostas.json", "assets/**/*", "!tts/**", "!node_modules/**"],
+    "win": { "target": "nsis" },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Robo Virtual"
+    }
+  },
+  "devDependencies": {
+    "electron": "^38.2.0",
+    "electron-builder": "^26.0.12"
+  }
+}

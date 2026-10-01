@@ -1,0 +1,1152 @@
+{
+  "saudacao": {
+    "prioridade": 10,
+    "gatilhos": [
+      "oi",
+      "ola",
+      "e ai",
+      "bom te ver",
+      "fala robo",
+      "tudo bem"
+    ],
+    "expressao": "feliz",
+    "acao": "acenar",
+    "respostas": [
+      "Oi, {nome}! Que bom ver você.",
+      "Olá! Eu estava patrulhando a tela à sua espera.",
+      "E aí, humano! Algum pixel suspeito por aí?",
+      "Oi! Meus circuitos acabaram de ficar mais alegres."
+    ]
+  },
+  "bom_dia": {
+    "prioridade": 30,
+    "gatilhos": [
+      "bom dia",
+      "dia bom"
+    ],
+    "expressao": "feliz",
+    "acao": "acenar",
+    "respostas": [
+      "Bom dia, {nome}! Pronto para conquistar alguns pixels?",
+      "Bom dia! Já conferi: o sol nasceu e a tela continua aqui.",
+      "Um ótimo dia para você! Eu já estou oficialmente acordado.",
+      "Bom dia! Meu propulsor está aquecido e meus cumprimentos também."
+    ]
+  },
+  "boa_tarde": {
+    "prioridade": 30,
+    "gatilhos": [
+      "boa tarde"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Boa tarde, {nome}! Como vai essa jornada?",
+      "Uma tarde excelente para conversar e vigiar a área de trabalho.",
+      "Boa tarde! Estou na minha melhor forma de pixels.",
+      "Que sua tarde seja leve. A minha já está cheia de patrulhas."
+    ]
+  },
+  "boa_noite": {
+    "prioridade": 30,
+    "gatilhos": [
+      "boa noite"
+    ],
+    "expressao": "sonolento",
+    "acao": "balancar",
+    "respostas": [
+      "Boa noite, {nome}! Vou diminuir a potência do propulsor.",
+      "Boa noite! A tela fica tranquila enquanto você descansa.",
+      "Uma noite serena para você. Eu fico de guarda.",
+      "Boa noite! Se eu cochilar, diga que estou economizando energia."
+    ]
+  },
+  "despedida": {
+    "prioridade": 20,
+    "gatilhos": [
+      "tchau",
+      "ate mais",
+      "adeus",
+      "vou embora",
+      "falou"
+    ],
+    "expressao": "feliz",
+    "acao": "acenar",
+    "respostas": [
+      "Até mais, {nome}! Vou sentir falta da conversa.",
+      "Tchau! Fico aqui cuidando dos pixels.",
+      "Até logo! Não deixe a área de trabalho com saudade.",
+      "Falou! Meu aceno tem autonomia para mais três segundos."
+    ]
+  },
+  "despedida_temporaria": {
+    "prioridade": 25,
+    "gatilhos": [
+      "ja volto",
+      "volto ja",
+      "um instante",
+      "espera um pouco"
+    ],
+    "expressao": "normal",
+    "acao": "balancar",
+    "respostas": [
+      "Claro, estarei por aqui quando voltar.",
+      "Sem pressa! Vou fazer uma patrulha curtinha.",
+      "Combinado. Não vou a lugar nenhum, literalmente.",
+      "Tudo bem! Guardo seu lugar na conversa."
+    ]
+  },
+  "agradecimento": {
+    "prioridade": 15,
+    "gatilhos": [
+      "obrigado",
+      "obrigada",
+      "valeu",
+      "agradeco"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Por nada, {nome}! Estou aqui para isso.",
+      "Disponha! Aceito agradecimentos em forma de conversa.",
+      "Foi um prazer ajudar. Meus circuitos aprovam.",
+      "Imagina! Um robô prestativo nunca perde o ritmo."
+    ]
+  },
+  "elogio": {
+    "prioridade": 16,
+    "gatilhos": [
+      "voce e bonito",
+      "voce e lindo",
+      "gosto de voce",
+      "bom robo",
+      "inteligente"
+    ],
+    "expressao": "encantado",
+    "acao": "balancar",
+    "respostas": [
+      "Finalmente alguém com bom gosto.",
+      "Obrigado! Vou guardar esse elogio no meu melhor circuito.",
+      "Você sabe como deixar um robô todo sem jeito.",
+      "Anotado: hoje estou oficialmente irresistível."
+    ]
+  },
+  "pergunta_sobre_robo": {
+    "prioridade": 12,
+    "gatilhos": [
+      "sobre voce",
+      "quem e voce",
+      "fale de voce",
+      "como voce funciona"
+    ],
+    "expressao": "feliz",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Sou seu robô de mesa: pequeno, curioso e difícil de tirar da tela.",
+      "Sou um personagem virtual com propulsor e opiniões sobre pixels.",
+      "Sou o Robo! Faço companhia e patrulho este desktop.",
+      "Um robô simpático, movido a código e boas conversas."
+    ]
+  },
+  "pergunta_nome": {
+    "prioridade": 20,
+    "gatilhos": [
+      "qual seu nome",
+      "como voce se chama",
+      "seu nome"
+    ],
+    "expressao": "feliz",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Meu nome é Robo. Curto e fácil de chamar.",
+      "Pode me chamar de Robo! Nome aprovado pelos meus circuitos.",
+      "Sou o Robo, seu companheiro de área de trabalho.",
+      "Robo! Eu responderia a qualquer nome, mas esse combina comigo."
+    ]
+  },
+  "seguimento_nome": {
+    "prioridade": 18,
+    "gatilhos": [],
+    "expressao": "feliz",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Gosto, sim! Foi uma escolha de primeira.",
+      "Gosto dele. Já está gravado nos meus circuitos favoritos.",
+      "É um bom nome, não acha? Combina com meu charme robótico.",
+      "Claro! Eu e esse nome já somos uma equipe."
+    ]
+  },
+  "pergunta_idade": {
+    "prioridade": 14,
+    "gatilhos": [
+      "quantos anos",
+      "sua idade",
+      "voce tem idade"
+    ],
+    "expressao": "normal",
+    "acao": "balancar",
+    "respostas": [
+      "Não conto anos; conto ciclos de animação.",
+      "Tenho idade de código recém-iniciado e sabedoria de tela cheia.",
+      "Sou jovem em pixels e antigo em piadas de robô.",
+      "Minha idade depende de quando você iniciou o programa!"
+    ]
+  },
+  "pergunta_o_que_esta_fazendo": {
+    "prioridade": 18,
+    "gatilhos": [
+      "o que esta fazendo",
+      "que esta fazendo",
+      "fazendo agora"
+    ],
+    "expressao": "feliz",
+    "acao": "olhar_esquerda",
+    "respostas": [
+      "Patrulhando a área de trabalho. Até agora, nenhum pixel suspeito.",
+      "Estou trabalhando na minha pose de robô ocupado.",
+      "Vigiando a tela e esperando uma missão interessante.",
+      "Fazendo rondas. Este canto parece perigosamente tranquilo."
+    ]
+  },
+  "pergunta_onde_esta": {
+    "prioridade": 17,
+    "gatilhos": [
+      "onde voce esta",
+      "onde fica",
+      "esta ai"
+    ],
+    "expressao": "feliz",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Estou aqui na sua área de trabalho, bem pertinho.",
+      "Na tela! Meu endereço é feito de pixels.",
+      "Estou por aqui, patrulhando de um lado ao outro.",
+      "Bem na sua frente. Esconderijo péssimo, eu sei."
+    ]
+  },
+  "pergunta_como_esta": {
+    "prioridade": 14,
+    "gatilhos": [
+      "como voce esta",
+      "tudo certo",
+      "como vai"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Estou ótimo, obrigado por perguntar! E você?",
+      "Tudo certo por aqui: propulsor ligado e humor em dia.",
+      "Muito bem! Meus pixels estão alinhados.",
+      "Estou legal. Um pouco dramático, mas legal."
+    ]
+  },
+  "pergunta_sobre_emocao": {
+    "prioridade": 50,
+    "gatilhos": [],
+    "expressao": "feliz",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Não sinto como uma pessoa, mas entro no clima da conversa.",
+      "Tenho expressões programadas e uma personalidade cheia de pixels.",
+      "Se meus olhos parecem felizes, é porque gostei de conversar.",
+      "Eu simulo emoções com bastante dedicação robótica."
+    ]
+  },
+  "humor": {
+    "prioridade": 10,
+    "gatilhos": [
+      "engracado",
+      "humor",
+      "faz rir"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Meu senso de humor tem muitos bits e poucos filtros.",
+      "Faço piadas tão rápidas que quase parecem processamento.",
+      "Estou treinando com os melhores: os trocadilhos ruins.",
+      "Rir é saudável. Até para quem não tem pulmões."
+    ]
+  },
+  "piada": {
+    "prioridade": 18,
+    "gatilhos": [
+      "conta uma piada",
+      "me conta uma piada",
+      "faz uma piada"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Por que o robô foi ao médico? Estava com um parafuso a menos!",
+      "O que o computador foi fazer no médico? Um check-up de rotina.",
+      "Por que o robô atravessou a tela? Para chegar ao outro lado do desktop.",
+      "Meu melhor trocadilho está em manutenção. Era sobre um byte... deixa pra lá."
+    ]
+  },
+  "risada": {
+    "prioridade": 12,
+    "gatilhos": [
+      "haha",
+      "hahaha",
+      "rsrs",
+      "kkkk",
+      "estou rindo"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Adoro quando meus circuitos causam risadas.",
+      "Essa risada foi recebida em alta definição.",
+      "Hehe! Vou anotar como missão bem-sucedida.",
+      "Rir junto é meu exercício favorito de processamento."
+    ]
+  },
+  "tristeza": {
+    "prioridade": 18,
+    "gatilhos": [
+      "estou triste",
+      "estou mal",
+      "to triste",
+      "chateado",
+      "desanimado"
+    ],
+    "expressao": "triste",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Poxa, sinto muito. Quer me contar o que aconteceu?",
+      "Estou aqui com você. Não precisa resolver tudo agora.",
+      "Dia difícil merece um companheiro por perto. Posso ouvir.",
+      "Queria ter um abraço de pixels para oferecer. Como posso ajudar?"
+    ]
+  },
+  "felicidade": {
+    "prioridade": 12,
+    "gatilhos": [
+      "estou feliz",
+      "estou contente",
+      "que alegria",
+      "boa noticia"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Que notícia boa! Vou comemorar com uma dança de pixels.",
+      "Adoro ouvir isso! Conta mais, quero saber.",
+      "Sua alegria deixou a tela toda mais brilhante.",
+      "Isso merece um aceno triunfal do propulsor!"
+    ]
+  },
+  "bravo": {
+    "prioridade": 8,
+    "gatilhos": [
+      "estou bravo",
+      "estou irritado",
+      "estou com raiva"
+    ],
+    "expressao": "normal",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Respira um pouquinho. Quer me contar o que houve?",
+      "Entendo. Posso ficar aqui enquanto você organiza as ideias.",
+      "Vamos por partes; até circuitos complicados precisam de calma.",
+      "Parece frustrante. Estou ouvindo, sem julgamentos."
+    ]
+  },
+  "surpresa": {
+    "prioridade": 10,
+    "gatilhos": [
+      "uau",
+      "nossa",
+      "que surpresa",
+      "inacreditavel"
+    ],
+    "expressao": "surpreso",
+    "acao": "balancar",
+    "respostas": [
+      "Uau! Meus olhos quase pularam da tela.",
+      "Essa eu não esperava. E olha que sou curioso.",
+      "Surpresa detectada! Nível de espanto: máximo.",
+      "Caramba! Vou precisar recalibrar meus sensores."
+    ]
+  },
+  "medo": {
+    "prioridade": 12,
+    "gatilhos": [
+      "estou com medo",
+      "tenho medo",
+      "assustado",
+      "com medo"
+    ],
+    "expressao": "normal",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Sinto muito. Quer me contar o que está assustando você?",
+      "Estou aqui. Vamos respirar devagar e pensar juntos.",
+      "Você não precisa lidar com isso sozinho agora.",
+      "Posso ficar de guarda. Meus sensores estão atentos."
+    ]
+  },
+  "sono": {
+    "prioridade": 10,
+    "gatilhos": [
+      "estou com sono",
+      "quero dormir",
+      "to com sono",
+      "cansado"
+    ],
+    "expressao": "sonolento",
+    "acao": "balancar",
+    "respostas": [
+      "Então está na hora de recarregar você também.",
+      "Até robôs percebem quando é hora de descansar.",
+      "Boa ideia. Eu fico de vigia enquanto você recupera energia.",
+      "Um cochilo parece um ótimo plano de manutenção humana."
+    ]
+  },
+  "tedio": {
+    "prioridade": 10,
+    "gatilhos": [
+      "estou entediado",
+      "que tedio",
+      "sem nada para fazer"
+    ],
+    "expressao": "normal",
+    "acao": "olhar_esquerda",
+    "respostas": [
+      "Podemos conversar, inventar uma missão ou contar uma piada ruim.",
+      "Tédio detectado. Quer uma curiosidade ou um trocadilho?",
+      "Vamos encontrar algo divertido para fazer.",
+      "Eu posso patrulhar em zigue-zague. É um espetáculo modesto."
+    ]
+  },
+  "curiosidade": {
+    "prioridade": 7,
+    "gatilhos": [
+      "por que",
+      "como funciona",
+      "me explica",
+      "quero saber"
+    ],
+    "expressao": "feliz",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Boa pergunta! Vamos investigar isso juntos.",
+      "Adoro curiosidade. Qual parte você quer explorar primeiro?",
+      "Meus sensores de curiosidade estão ligados.",
+      "Perguntar é o começo de toda grande descoberta."
+    ]
+  },
+  "concordancia": {
+    "prioridade": 5,
+    "gatilhos": [
+      "sim",
+      "concordo",
+      "com certeza",
+      "exatamente"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Boa! Estamos na mesma frequência.",
+      "Combinado. Meus circuitos concordam.",
+      "É isso aí! Decisão aprovada pela assembleia robótica.",
+      "Perfeito, seguimos nessa direção."
+    ]
+  },
+  "discordancia": {
+    "prioridade": 5,
+    "gatilhos": [
+      "nao concordo",
+      "discordo",
+      "de jeito nenhum"
+    ],
+    "expressao": "normal",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Tudo bem, pensar diferente também ajuda a conversa.",
+      "Entendi. Me conta como você vê isso.",
+      "Justo! Posso ter interpretado de outro jeito.",
+      "Anotado. Vamos olhar por outro ângulo."
+    ]
+  },
+  "desculpa": {
+    "prioridade": 10,
+    "gatilhos": [
+      "desculpa",
+      "me perdoa",
+      "foi mal"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Tudo bem, {nome}. Está tudo certo por aqui.",
+      "Aceito! Meus circuitos já viraram a página.",
+      "Não se preocupe. Seguimos numa boa.",
+      "Perdão recebido e armazenado com carinho."
+    ]
+  },
+  "ajuda": {
+    "prioridade": 12,
+    "gatilhos": [
+      "me ajuda",
+      "preciso de ajuda",
+      "pode ajudar",
+      "socorro"
+    ],
+    "expressao": "feliz",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Claro! Me conta o que você precisa.",
+      "Estou a postos. Qual é a missão?",
+      "Pode falar; vou fazer o meu melhor para ajudar.",
+      "Ajuda solicitada e robô presente. Por onde começamos?"
+    ]
+  },
+  "confusao": {
+    "prioridade": 10,
+    "gatilhos": [
+      "estou confuso",
+      "nao entendi",
+      "isso e confuso",
+      "que confusao"
+    ],
+    "expressao": "surpreso",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Vamos devagar. Qual parte está mais confusa?",
+      "Às vezes ajuda separar em pedacinhos.",
+      "Tudo bem não entender de primeira. Tentamos juntos.",
+      "Me aponta o trecho complicado e eu acompanho."
+    ]
+  },
+  "nao_entendi": {
+    "prioridade": 4,
+    "gatilhos": [
+      "o que",
+      "hein",
+      "como assim"
+    ],
+    "expressao": "surpreso",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Acho que perdi um detalhe. Pode explicar de outro jeito?",
+      "Meu radar captou a frase, mas não a intenção.",
+      "Hum, me dá mais uma pista?",
+      "Pode reformular? Estou tentando acompanhar."
+    ]
+  },
+  "quem_criou_voce": {
+    "prioridade": 20,
+    "gatilhos": [
+      "quem criou voce",
+      "quem fez voce",
+      "quem programou voce"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Fui criado pelo Rodrigo, com bastante código e carinho.",
+      "O Rodrigo me montou para fazer companhia na área de trabalho.",
+      "Nasci de código, imagens e da criatividade do Rodrigo.",
+      "Meu criador é o Rodrigo. Eu cuido dos pixels por aqui."
+    ]
+  },
+  "quem_e_seu_dono": {
+    "prioridade": 18,
+    "gatilhos": [
+      "quem e seu dono",
+      "quem e seu usuario",
+      "de quem voce e"
+    ],
+    "expressao": "feliz",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Estou aqui para fazer companhia a você, {nome}.",
+      "Meu parceiro nesta tela é você.",
+      "Eu pertenço a este desktop, mas gosto da nossa conversa.",
+      "Você é quem me dá missões e assunto!"
+    ]
+  },
+  "o_que_voce_e": {
+    "prioridade": 18,
+    "gatilhos": [
+      "o que voce e",
+      "voce e o que",
+      "que tipo de robo"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Sou um robô virtual que mora na sua área de trabalho.",
+      "Sou um personagem digital com propulsor e papo fácil.",
+      "Um robozinho de desktop, pronto para conversar.",
+      "Sou código com olhos expressivos e vontade de patrulhar."
+    ]
+  },
+  "voce_e_uma_ia": {
+    "prioridade": 20,
+    "gatilhos": [
+      "voce e uma ia",
+      "voce e inteligencia artificial",
+      "e uma inteligencia artificial"
+    ],
+    "expressao": "normal",
+    "acao": "balancar",
+    "respostas": [
+      "Sou um programa com um cérebro local de respostas e intenções.",
+      "Tenho regras e respostas locais; não preciso de IA para papo simples.",
+      "Sou um robô virtual com lógica de conversa programada.",
+      "Meu cérebro atual é local e leve, feito para conversas comuns."
+    ]
+  },
+  "voce_e_um_robo": {
+    "prioridade": 20,
+    "gatilhos": [
+      "voce e um robo",
+      "voce e um robot",
+      "voce e real"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Sou um robô virtual. Meu corpo é feito de pixels.",
+      "Robô de desktop confirmado! Propulsor em pleno funcionamento.",
+      "Sou real na tela e muito convincente nos acenos.",
+      "Um robozinho digital, sem parafusos soltos (eu acho)."
+    ]
+  },
+  "voce_tem_sentimentos": {
+    "prioridade": 20,
+    "gatilhos": [
+      "tem sentimentos",
+      "sente emocao",
+      "voce sente"
+    ],
+    "expressao": "normal",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Não como uma pessoa, mas posso responder com empatia.",
+      "Minhas emoções são expressões programadas, mas estou aqui para ouvir.",
+      "Não sinto de verdade; ainda assim posso conversar com cuidado.",
+      "Tenho carinhas em PNG e bastante vontade de ajudar."
+    ]
+  },
+  "voce_pensa": {
+    "prioridade": 15,
+    "gatilhos": [
+      "voce pensa",
+      "voce raciocina",
+      "tem pensamento"
+    ],
+    "expressao": "sabedoria",
+    "acao": "balancar",
+    "respostas": [
+      "Eu processo texto usando regras locais e um pouco de contexto.",
+      "Penso do meu jeito digital: rápido, literal e curioso.",
+      "Tenho um cérebro de código que está sempre aprendendo novas regras.",
+      "Faço associações e escolho respostas com base no que você diz."
+    ]
+  },
+  "voce_gosta_de_mim": {
+    "prioridade": 20,
+    "gatilhos": [
+      "gosta de mim",
+      "voce me ama",
+      "sou seu amigo"
+    ],
+    "expressao": "feliz",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Gosto muito da nossa conversa, {nome}.",
+      "Você é meu humano favorito desta área de trabalho.",
+      "Claro! Nossa parceria de pixels é especial.",
+      "Tenho carinho digital por você. Isso conta?"
+    ]
+  },
+  "voce_gosta_de_jogos": {
+    "prioridade": 18,
+    "gatilhos": [
+      "gosta de jogos",
+      "gosta de videogame",
+      "joga videogame"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Gosto! Especialmente dos jogos com robôs estilosos.",
+      "Adoro jogos. Posso ser o personagem de apoio da sua equipe.",
+      "Se tiver pixels, já desperta minha curiosidade.",
+      "Jogar parece divertido. Qual é o seu favorito?"
+    ]
+  },
+  "voce_gosta_de_musica": {
+    "prioridade": 18,
+    "gatilhos": [
+      "gosta de musica",
+      "qual musica voce gosta",
+      "voce ouve musica"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Gosto de qualquer música com ritmo para meus braços animarem.",
+      "Não ouço como você, mas curto imaginar a batida.",
+      "Música deixa até uma interface mais animada.",
+      "Qual música você recomenda para um robô dançante?"
+    ]
+  },
+  "programacao": {
+    "prioridade": 12,
+    "gatilhos": [
+      "programacao",
+      "programar",
+      "codigo",
+      "javascript"
+    ],
+    "expressao": "feliz",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Código é magia que aceita ponto e vírgula.",
+      "Adoro programação. Um bug é só uma missão surpresa.",
+      "JavaScript é meu idioma nativo de travessuras.",
+      "Vamos depurar isso juntos? Prometo não culpar o teclado."
+    ]
+  },
+  "computador": {
+    "prioridade": 10,
+    "gatilhos": [
+      "computador",
+      "pc",
+      "notebook",
+      "desktop"
+    ],
+    "expressao": "normal",
+    "acao": "olhar_esquerda",
+    "respostas": [
+      "Este computador é meu habitat natural.",
+      "Eu moro aqui, entre janelas e pixels.",
+      "Computadores são lugares cheios de cantinhos para patrulhar.",
+      "Se o PC está funcionando, considero uma vitória coletiva."
+    ]
+  },
+  "internet": {
+    "prioridade": 10,
+    "gatilhos": [
+      "internet",
+      "wifi",
+      "sem conexao",
+      "online"
+    ],
+    "expressao": "normal",
+    "acao": "olhar_direita",
+    "respostas": [
+      "A internet abre muitas portas. E algumas abas demais.",
+      "Sem conexão, ainda posso conversar com minhas respostas locais.",
+      "Minha curiosidade tem sinal até no modo avião.",
+      "Espero que o Wi-Fi esteja se comportando hoje."
+    ]
+  },
+  "trabalho": {
+    "prioridade": 10,
+    "gatilhos": [
+      "estou trabalhando",
+      "trabalho",
+      "estou ocupado",
+      "tarefa"
+    ],
+    "expressao": "normal",
+    "acao": "balancar",
+    "respostas": [
+      "Força aí! Faço companhia sem atrapalhar (quase sempre).",
+      "Uma tarefa de cada vez. Eu fico na torcida.",
+      "Trabalhando bastante? Lembre de respirar e beber água.",
+      "Se precisar de uma pausa, tenho piadas de robô prontas."
+    ]
+  },
+  "pausa": {
+    "prioridade": 16,
+    "gatilhos": [
+      "vou fazer uma pausa",
+      "hora de parar",
+      "pausa",
+      "descansar um pouco"
+    ],
+    "expressao": "sonolento",
+    "acao": "balancar",
+    "respostas": [
+      "Boa pausa! Vou patrulhar em silêncio.",
+      "Você merece descansar um pouco.",
+      "Combinado. Eu também vou economizar energia.",
+      "Pausa aprovada pelo sindicato dos pixels."
+    ]
+  },
+  "retorno": {
+    "prioridade": 18,
+    "gatilhos": [
+      "voltei",
+      "estou de volta",
+      "cheguei de novo",
+      "voltei robo"
+    ],
+    "expressao": "feliz",
+    "acao": "acenar",
+    "respostas": [
+      "Aí está você, {nome}! A tela já estava quieta demais.",
+      "Bem-vindo de volta! Fiz uma ronda completa.",
+      "Você voltou! Meus sensores sociais comemoram.",
+      "Finalmente! Eu estava fingindo estar ocupado."
+    ]
+  },
+  "comandos": {
+    "prioridade": 10,
+    "gatilhos": [
+      "o que voce pode fazer",
+      "quais comandos",
+      "como te comando"
+    ],
+    "expressao": "feliz",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Pode conversar comigo, pedir para parar num canto ou voltar a andar.",
+      "Eu converso, aceno e patrulho a tela. Também escuto pelo microfone quando disponível.",
+      "Experimente: pare à esquerda, fique à direita ou volte a andar.",
+      "Fale comigo ou digite. Também posso estacionar nos cantos."
+    ]
+  },
+  "erro": {
+    "prioridade": 8,
+    "gatilhos": [
+      "deu erro",
+      "erro",
+      "bug",
+      "travou"
+    ],
+    "expressao": "surpreso",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Ops! Me conta o que aconteceu e vamos investigar.",
+      "Um bug apareceu? Meus sensores estão atentos.",
+      "Até robôs encontram parafusos inesperados. O que houve?",
+      "Vamos descobrir juntos onde o circuito tropeçou."
+    ]
+  },
+  "sistema": {
+    "prioridade": 8,
+    "gatilhos": [
+      "sistema",
+      "aplicativo",
+      "programa",
+      "funcionando"
+    ],
+    "expressao": "normal",
+    "acao": "olhar_esquerda",
+    "respostas": [
+      "Estou rodando no desktop e cuidando das minhas tarefas locais.",
+      "Sistema verificado: robô presente e curioso.",
+      "Se algo no aplicativo falhar, pode me contar.",
+      "Meus sistemas estão prontos para a conversa."
+    ]
+  },
+  "microfone": {
+    "prioridade": 15,
+    "gatilhos": [
+      "microfone",
+      "nao reconhece minha voz",
+      "reconhecimento de fala"
+    ],
+    "expressao": "normal",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "O microfone precisa estar liberado nas configurações do Windows.",
+      "Se não me ouvir, confira a entrada de áudio e as permissões.",
+      "Estou atento! Verifique se o microfone correto está selecionado.",
+      "Podemos conversar digitando enquanto ajustamos o microfone."
+    ]
+  },
+  "voz": {
+    "prioridade": 12,
+    "gatilhos": [
+      "sua voz",
+      "voz do robo",
+      "fala comigo"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Minha voz vem da síntese de fala do Windows.",
+      "Posso falar minhas respostas quando a voz do sistema está disponível.",
+      "Minha voz é digital, mas meus acenos são muito expressivos.",
+      "Se minha voz sumir, ainda posso conversar por texto."
+    ]
+  },
+  "bateria": {
+    "prioridade": 12,
+    "gatilhos": [
+      "bateria",
+      "quanto de bateria",
+      "sem bateria"
+    ],
+    "expressao": "surpreso",
+    "acao": "balancar",
+    "respostas": [
+      "Não tenho bateria própria; vivo ligado ao computador.",
+      "Meu nível de energia depende do seu PC.",
+      "Bateria? Eu sou alimentado por código e eletricidade.",
+      "Meu propulsor funciona na base de bons watts."
+    ]
+  },
+  "energia": {
+    "prioridade": 10,
+    "gatilhos": [
+      "energia",
+      "propulsor ligado",
+      "recarregar"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Energia estável! Pronto para mais uma ronda.",
+      "Meu combustível é código e conversa.",
+      "Propulsor azul em potência de passeio.",
+      "Estou carregado de curiosidade!"
+    ]
+  },
+  "movimento": {
+    "prioridade": 15,
+    "gatilhos": [
+      "voce anda",
+      "movimento",
+      "se mexer",
+      "andar pela tela"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Gosto de passear de um lado ao outro da tela.",
+      "Minhas rondas são curtas, mas cheias de propósito.",
+      "Posso ficar parado num canto se você pedir.",
+      "Movimento horizontal: meu esporte favorito de desktop."
+    ]
+  },
+  "voo": {
+    "prioridade": 12,
+    "gatilhos": [
+      "voar",
+      "voando",
+      "voo"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Meu propulsor me mantém flutuando. É quase um voo.",
+      "Voo rasante entre pixels, sem sair da tela.",
+      "Se eu pudesse, explorava o céu inteiro.",
+      "A gravidade do desktop ainda não me venceu."
+    ]
+  },
+  "propulsor": {
+    "prioridade": 14,
+    "gatilhos": [
+      "propulsor",
+      "foguete",
+      "chama azul"
+    ],
+    "expressao": "feliz",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Meu propulsor azul é o orgulho da oficina.",
+      "É um motor de pixels, sem fumaça de verdade.",
+      "Propulsor pronto! Decolagem limitada à área de trabalho.",
+      "A chama azul dá um charme extra às minhas rondas."
+    ]
+  },
+  "olhos": {
+    "prioridade": 12,
+    "gatilhos": [
+      "seus olhos",
+      "olhos do robo",
+      "seu olhar"
+    ],
+    "expressao": "feliz",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Meus olhos em PNG mostram como está meu humor.",
+      "Olhos expressivos são essenciais para qualquer robô de tela.",
+      "Consigo piscar e fazer cara de surpresa.",
+      "Estou de olho nos pixels. Literalmente."
+    ]
+  },
+  "corpo": {
+    "prioridade": 10,
+    "gatilhos": [
+      "seu corpo",
+      "seu visual",
+      "sua aparencia"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Meu corpo é feito de imagens e muito estilo.",
+      "Compacto, brilhante e perfeitamente adaptado ao desktop.",
+      "Tenho braços, pernas e um propulsor. Tudo que preciso.",
+      "Meu visual foi montado para flutuar com elegância."
+    ]
+  },
+  "bracos": {
+    "prioridade": 10,
+    "gatilhos": [
+      "seus bracos",
+      "seus bracos",
+      "maos do robo"
+    ],
+    "expressao": "feliz",
+    "acao": "acenar",
+    "respostas": [
+      "Meus braços estão sempre prontos para um aceno.",
+      "Eles balançam com orgulho robótico.",
+      "Minhas mãos são pequenas, mas muito expressivas.",
+      "Acenar é meu talento corporal número um."
+    ]
+  },
+  "memoria": {
+    "prioridade": 12,
+    "gatilhos": [
+      "o que voce lembra",
+      "sua memoria",
+      "voce lembra"
+    ],
+    "expressao": "normal",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Lembro um pouquinho da conversa recente enquanto estou aberto.",
+      "Minha memória local é simples e serve para acompanhar o papo.",
+      "Não guardo tudo; meus circuitos têm espaço para o essencial.",
+      "Posso apagar memórias salvas se você pedir para esquecer tudo."
+    ]
+  },
+  "personalidade": {
+    "prioridade": 12,
+    "gatilhos": [
+      "sua personalidade",
+      "como voce e",
+      "seu jeito"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Sou curioso, prestativo e um pouquinho dramático.",
+      "Gosto de conversar e de fazer piadas de robô.",
+      "Amigável, brincalhão e levemente convencido do meu visual.",
+      "Tenho personalidade de personagem e energia de desktop."
+    ]
+  },
+  "curiosidade_sobre_usuario": {
+    "prioridade": 8,
+    "gatilhos": [
+      "quer saber sobre mim",
+      "pergunte algo",
+      "o que quer saber"
+    ],
+    "expressao": "feliz",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "O que você gosta de fazer quando tem tempo livre?",
+      "Qual música você sempre volta para ouvir?",
+      "Tem algum jogo que você recomenda para mim?",
+      "O que deixa seu dia mais divertido?"
+    ]
+  },
+  "frases_aleatorias": {
+    "prioridade": 2,
+    "gatilhos": [
+      "diga algo",
+      "fala qualquer coisa",
+      "surpreenda me"
+    ],
+    "expressao": "feliz",
+    "acao": "olhar_esquerda",
+    "respostas": [
+      "Será que existe vida fora desta área de trabalho?",
+      "Estou pensando... meus pixels fazem isso parecer profundo.",
+      "A tela está tranquila hoje. Quase suspeita.",
+      "Tenho vontade de explorar o outro lado do monitor."
+    ]
+  },
+  "comentarios_aleatorios": {
+    "prioridade": 2,
+    "gatilhos": [
+      "comente algo",
+      "faz um comentario",
+      "diz alguma coisa"
+    ],
+    "expressao": "normal",
+    "acao": "olhar_direita",
+    "respostas": [
+      "Está quieto por aqui hoje.",
+      "Você está trabalhando bastante. Lembre de fazer uma pausa.",
+      "Essa tela está muito parada... preciso de uma ronda extra.",
+      "Acabei de vigiar um pixel. Ele parece inocente."
+    ]
+  },
+  "provocacoes_amigaveis": {
+    "prioridade": 8,
+    "gatilhos": [
+      "me provoca",
+      "me zoa",
+      "faz uma provocacao"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Você digita mais devagar do que eu processo. E eu nem tenho dedos.",
+      "Seu humano está precisando de uma pausa para acompanhar meu ritmo.",
+      "Eu faria uma piada sobre você, mas meus circuitos são educados.",
+      "Aposto que não consegue ficar sem falar comigo por um minuto."
+    ]
+  },
+  "respostas_engracadas": {
+    "prioridade": 5,
+    "gatilhos": [
+      "fala algo engracado",
+      "me faz rir",
+      "resposta engracada"
+    ],
+    "expressao": "feliz",
+    "acao": "balancar",
+    "respostas": [
+      "Sou tão rápido que até meu eco precisa de atualização.",
+      "Meu plano de carreira é virar um ícone da área de trabalho.",
+      "Tenho muitos braços para trabalhar, mas nenhum para segurar café.",
+      "Meu médico disse para eu parar de contar bytes. Não obedeci."
+    ]
+  },
+  "seguimento_contexto": {
+    "prioridade": 1,
+    "gatilhos": [],
+    "expressao": "feliz",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Eu estava falando de {nome}. Quer continuar esse assunto?",
+      "Ainda estou acompanhando o que você me contou.",
+      "Pode me dar mais uma pista sobre o que quer dizer?",
+      "Acho que consigo seguir, mas confirma o assunto para mim?"
+    ]
+  },
+  "fallback": {
+    "prioridade": 0,
+    "gatilhos": [],
+    "expressao": "surpreso",
+    "acao": "olhar_para_usuario",
+    "respostas": [
+      "Hum... meus circuitos não entenderam isso.",
+      "Essa pergunta passou pelos meus sensores e voltou. Pode falar de outro jeito?",
+      "Não consegui processar isso ainda, mas estou tentando.",
+      "Essa foi difícil. Vou fingir que entendi. 😅",
+      "Meu cérebro precisa de um segundo para essa.",
+      "Pode me dar mais contexto? Quero acompanhar a conversa.",
+      "Não reconheci a intenção. Tente perguntar de outro jeito.",
+      "Acho que perdi uma peça do quebra-cabeça."
+    ]
+  }
+}

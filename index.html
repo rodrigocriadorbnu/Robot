@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>RobÃ´ Virtual</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <section id="painel-controle" aria-label="Conversa com o robô">
+        <div class="linha-controles">
+            <button id="botao-microfone" type="button" title="Falar com o robô">🎤</button>
+            <input id="mensagem" type="text" maxlength="2000" placeholder="Digite uma mensagem..." aria-label="Mensagem">
+            <button id="botao-enviar" type="button">Enviar</button>
+        </div>
+        <div id="estado" role="status" aria-live="polite">● Pronto</div>
+    </section>
+
+    <div id="balao-fala" role="status" aria-live="polite" hidden></div>
+
+
+    <div id="robo">
+
+
+        <!-- PROPULSOR -->
+
+        <img
+            id="propulsor"
+            src="assets/robo/propulsor.png"
+            alt=""
+        >
+
+        <canvas
+         id="particulas-propulsor"
+         ></canvas>
+
+
+        <!-- BRAÃ‡O ESQUERDO -->
+
+        <img
+            id="braco-esquerdo"
+            src="assets/robo/braco-esquerdo.png"
+            alt=""
+        >
+
+
+        <img
+            id="mao-esquerda"
+            src="assets/robo/mao-esquerda.png"
+            alt=""
+        >
+
+
+        <!-- BRAÃ‡O DIREITO -->
+
+        <img
+            id="braco-direito"
+            src="assets/robo/braco-direito.png"
+            alt=""
+        >
+
+
+        <img
+            id="mao-direita"
+            src="assets/robo/mao-direita.png"
+            alt=""
+        >
+
+
+        <!-- CORPO -->
+
+        <img
+            id="corpo"
+            src="assets/robo/corpo.png"
+            alt=""
+        >
+
+        <img
+            id="perna-esquerda"
+            src="assets/robo/perna-esquerda.png"
+            alt=""
+        >
+
+        <img
+            id="perna-direita"
+            src="assets/robo/perna-direita.png"
+            alt=""
+        >
+
+
+        <!-- CABEÃ‡A -->
+
+        <div id="cabeca">
+
+            <img
+                id="cabeca-imagem"
+                src="assets/robo/olhos-normal.png"
+                alt=""
+            >
+
+        </div>
+
+
+    </div>
+
+
+    <script src="robot.js"></script>
+
+</body>
+
+</html>
