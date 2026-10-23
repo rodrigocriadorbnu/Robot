@@ -2,3 +2,7 @@ node_modules/
 dist/
 out/
 *.log
+tts/piper/.venv/
+tts/piper/build/
+tts/piper/dist/
+tts/piper/__pycache__/

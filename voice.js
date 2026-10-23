@@ -1,5 +1,6 @@
 const { spawn } = require("child_process");
 const { existsSync, statSync, unlinkSync, writeFileSync } = require("fs");
+const { app } = require("electron");
 const https = require("https");
 const os = require("os");
 const path = require("path");
@@ -7,10 +8,29 @@ const { randomUUID } = require("crypto");
 
 const diretorioPiper = path.join(__dirname, "tts", "piper");
 const python = path.join(diretorioPiper, ".venv", "Scripts", "python.exe");
+const executavelPiper = path.join(diretorioPiper, "dist", "piper", "piper.exe");
 const voz = "pt_BR-faber-medium";
-const modelo = path.join(diretorioPiper, `${voz}.onnx`);
-const configuracao = `${modelo}.json`;
 let filaDeFalas = Promise.resolve();
+
+function obterRuntimePiper() {
+    const empacotado = app?.isPackaged === true;
+    const pastaDados = empacotado
+        ? path.join(process.resourcesPath, "tts", "piper")
+        : diretorioPiper;
+    const modelo = path.join(pastaDados, `${voz}.onnx`);
+    const configuracao = `${modelo}.json`;
+    const executavelEmpacotado = empacotado
+        ? path.join(process.resourcesPath, "piper", "piper.exe")
+        : executavelPiper;
+
+    if (existsSync(executavelEmpacotado)) {
+        return { comando: executavelEmpacotado, prefixo: [], pastaDados, modelo, configuracao };
+    }
+    if (!empacotado && existsSync(python)) {
+        return { comando: python, prefixo: ["-m", "piper"], pastaDados, modelo, configuracao };
+    }
+    return { comando: null, prefixo: [], pastaDados, modelo, configuracao };
+}
 
 function executar(comando, argumentos, opcoes = {}) {
     return new Promise((resolve, reject) => {
@@ -40,9 +60,13 @@ function executar(comando, argumentos, opcoes = {}) {
 
 function verificarArquivos() {
     if (process.platform !== "win32") throw new Error("O Piper configurado neste projeto usa reprodução de áudio do Windows.");
-    if (!existsSync(python)) throw new Error(`Python do ambiente local não encontrado: ${python}. Reinstale Piper em tts/piper/.venv.`);
-    if (!existsSync(modelo)) throw new Error(`Modelo Piper não encontrado: ${modelo}`);
-    if (!existsSync(configuracao)) throw new Error(`Configuração da voz Piper não encontrada: ${configuracao}`);
+    const runtime = obterRuntimePiper();
+    if (!runtime.comando) {
+        throw new Error("Runtime Piper não encontrado. Gere o runtime com npm run build:piper ou instale Piper em tts/piper/.venv.");
+    }
+    if (!existsSync(runtime.modelo)) throw new Error(`Modelo Piper não encontrado: ${runtime.modelo}`);
+    if (!existsSync(runtime.configuracao)) throw new Error(`Configuração da voz Piper não encontrada: ${runtime.configuracao}`);
+    return runtime;
 }
 
 async function reproduzirWav(arquivo) {
@@ -142,13 +166,6 @@ async function falarAgora(texto) {
     try {
         if (process.platform !== "win32") throw new Error("A reprodução configurada neste projeto requer Windows.");
         arquivoAudio = path.join(os.tmpdir(), `robo-piper-${process.pid}-${randomUUID()}.wav`);
-        const argumentos = [
-            "-m", "piper",
-            "--model", voz,
-            "--data-dir", diretorioPiper,
-            "--output-file", arquivoAudio,
-            "--", texto
-        ];
         if (process.env.AZURE_SPEECH_KEY && process.env.AZURE_SPEECH_REGION) {
             try {
                 await sintetizarComAzure(texto, arquivoAudio);
@@ -159,8 +176,15 @@ async function falarAgora(texto) {
             }
         }
         try {
-            verificarArquivos();
-            await executar(python, argumentos, { cwd: diretorioPiper });
+            const runtime = verificarArquivos();
+            const argumentos = [
+                ...runtime.prefixo,
+                "--model", voz,
+                "--data-dir", runtime.pastaDados,
+                "--output-file", arquivoAudio,
+                "--", texto
+            ];
+            await executar(runtime.comando, argumentos, { cwd: runtime.pastaDados });
         } catch (erroPiper) {
             console.warn(`[Piper TTS] Síntese local falhou. ${erroPiper.message}`);
             await falarComVozDoWindows(texto);

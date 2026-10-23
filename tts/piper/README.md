@@ -4,7 +4,8 @@
 - Voz: `pt_BR-faber-medium` (português do Brasil, qualidade média).
 - Os arquivos do modelo e da configuração ficam nesta pasta.
 - O ambiente virtual `.venv` guarda Piper e suas dependências sem instalar Piper globalmente.
-- O projeto usa Python 3.13 instalado no Windows para executar esse ambiente virtual.
+- O instalador inclui o runtime compilado do Piper e este modelo; Python não é necessário na máquina de destino.
+- O build do instalador usa Python 3.13 no Windows e empacota o runtime com PyInstaller.
 
 ## Teste independente
 
@@ -19,5 +20,5 @@ O WAV de teste foi gerado e reproduzido com o reprodutor nativo do Windows.
 ## Referências e origem
 
 - Piper mantido: <https://github.com/OHF-Voice/piper1-gpl>, licença GPL-3.0.
-- Voz: <https://huggingface.co/rhasspy/piper-voices/tree/main/pt/pt_BR/faber/medium>.
+- Voz: <https://huggingface.co/rhasspy/piper-voices/tree/main/pt/pt_BR/faber/medium> (cartão do modelo: dataset CC0).
 - O Piper anterior de `rhasspy/piper` foi arquivado; esta instalação usa a continuação mantida em `OHF-Voice/piper1-gpl`.

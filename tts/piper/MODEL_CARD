@@ -1,0 +1,8 @@
+# Model card for faber (medium)
+
+- Language: pt_BR (Portuguese, Brazil)
+- Speakers: 1
+- Quality: medium
+- Samplerate: 22,050 Hz
+- Training dataset: https://github.com/OHF-Voice/voice-datasets
+- Dataset license: CC0

@@ -8,6 +8,7 @@
 
 const path = require("path");
 const { processarMensagem, limparHistorico } = require("./brain");
+const { processarComOllama, limparHistoricoOllama } = require("./ollama");
 const { falar } = require("./voice");
 const { reconhecerVoz } = require("./speech");
 const { apagarMemorias } = require("./memory");
@@ -229,7 +230,15 @@ app.whenReady().then(() => {
         if (/^(esquece|esqueça|apague|apagar) (tudo|todas as memórias|o que você lembra)( de mim)?[.! ]*$/i.test(texto)) {
             apagarMemorias();
             limparHistorico();
+            limparHistoricoOllama();
             return { fala: "Pronto, apaguei as informações que eu lembrava sobre você.", expressao: "feliz", acao: "nenhuma", intencao: "memoria" };
+        }
+
+        try {
+            const respostaOllama = await processarComOllama(texto);
+            if (respostaOllama) return respostaOllama;
+        } catch (erro) {
+            console.error("Não foi possível conversar com o Ollama; usando as respostas locais:", erro.message);
         }
 
         return processarMensagem(texto);

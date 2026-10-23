@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "set ELECTRON_RUN_AS_NODE=&& electron .",
-    "dist": "electron-builder --win nsis",
+    "build:piper": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts\\build-piper.ps1",
+    "dist": "npm run build:piper && electron-builder --win nsis --publish never",
     "test:piper": "tts\\piper\\.venv\\Scripts\\python.exe -m piper --model pt_BR-faber-medium --data-dir tts/piper --output-file tts/piper/teste.wav -- \"Olá Rodrigo! Eu sou o seu robô virtual.\""
   },
   "keywords": [
@@ -21,6 +22,13 @@
     "productName": "Robo Virtual",
     "directories": { "output": "dist" },
     "files": ["*.js", "*.html", "*.css", "respostas.json", "assets/**/*", "!tts/**", "!node_modules/**"],
+    "extraResources": [
+      { "from": "tts/piper/dist/piper", "to": "piper" },
+      { "from": "tts/piper/pt_BR-faber-medium.onnx", "to": "tts/piper/pt_BR-faber-medium.onnx" },
+      { "from": "tts/piper/pt_BR-faber-medium.onnx.json", "to": "tts/piper/pt_BR-faber-medium.onnx.json" },
+      { "from": "tts/piper/MODEL_CARD", "to": "tts/piper/MODEL_CARD" },
+      { "from": "tts/piper/README.md", "to": "tts/piper/README.md" }
+    ],
     "win": { "target": "nsis" },
     "nsis": {
       "oneClick": false,
